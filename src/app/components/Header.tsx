@@ -8,26 +8,33 @@ export const Header = () => {
   return (
     <header className="w-full px-[50px] py-[15px] xl:py-5 bg-transparent">
       <nav className="flex justify-between">
-        <div className="flex gap-3">
-          <Image src={Storefront} alt="stolefront" height={32} width={32} />
-          <Image src={MarketLogo} alt="marketlogo" height={20} width={200} />
+        <div className="flex gap-3 items-center">
+          <Image
+            className="w-6 h-6 xl:h-8 xl:w-8"
+            src={Storefront}
+            alt="stolefront"
+          />
+          <Image
+            className="w-[150px] h-[15px] xl:h-[20px] xl:w-[200px]"
+            src={MarketLogo}
+            alt="marketlogo"
+          />
         </div>
-
         <div className="hidden xl:flex gap-2.5 items-center">
           <a
-            className="text-base text-white px-5 hover:scale-95 duration-300"
+            className="text-base font-semibold text-white px-5 hover:scale-95 duration-300"
             href="/"
           >
             Marketplace
           </a>
           <a
-            className="text-base text-white px-5 hover:scale-95 duration-300"
+            className="text-base font-semibold text-white px-5 hover:scale-95 duration-300"
             href="/"
           >
             Rankings
           </a>
           <a
-            className="text-base text-white px-5 hover:scale-95 duration-300"
+            className="text-base font-semibold text-white px-5 hover:scale-95 duration-300"
             href="/"
           >
             Connect a wallet
