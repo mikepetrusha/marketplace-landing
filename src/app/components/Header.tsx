@@ -1,55 +1,55 @@
-import Image from "next/image";
-import UserIcon from "../../../public/nav/User.svg";
-import Storefront from "../../../public/nav/Storefront.svg";
-import MarketLogo from "../../../public/nav/NFT Marketplace.svg";
-import burger from "../../../public/nav/burger.svg";
+import Image from 'next/image';
+import UserIcon from '../../../public/nav/User.svg';
+import Storefront from '../../../public/nav/Storefront.svg';
+import MarketLogo from '../../../public/nav/NFT Marketplace.svg';
+import burger from '../../../public/nav/burger.svg';
 
 export const Header = () => {
   return (
-    <header className="w-full px-[50px] py-[15px] xl:py-5 bg-transparent">
-      <nav className="flex justify-between">
-        <div className="flex gap-3 items-center">
+    <header className='w-full bg-transparent px-[50px] py-[15px] xl:py-5'>
+      <nav className='flex justify-between'>
+        <div className='flex items-center gap-3'>
           <Image
-            className="w-6 h-6 xl:h-8 xl:w-8"
+            className='h-6 w-6 xl:h-8 xl:w-8'
             src={Storefront}
-            alt="stolefront"
+            alt='stolefront'
           />
           <Image
-            className="w-[150px] h-[15px] xl:h-[20px] xl:w-[200px]"
+            className='h-[15px] w-[150px] xl:h-[20px] xl:w-[200px]'
             src={MarketLogo}
-            alt="marketlogo"
+            alt='marketlogo'
           />
         </div>
-        <div className="hidden xl:flex gap-2.5 items-center">
+        <div className='hidden items-center gap-2.5 xl:flex'>
           <a
-            className="text-base font-semibold text-white px-5 hover:scale-95 duration-300"
-            href="/"
+            className='px-5 text-base font-semibold text-white duration-300 hover:scale-95'
+            href='/'
           >
             Marketplace
           </a>
           <a
-            className="text-base font-semibold text-white px-5 hover:scale-95 duration-300"
-            href="/"
+            className='px-5 text-base font-semibold text-white duration-300 hover:scale-95'
+            href='/'
           >
             Rankings
           </a>
           <a
-            className="text-base font-semibold text-white px-5 hover:scale-95 duration-300"
-            href="/"
+            className='px-5 text-base font-semibold text-white duration-300 hover:scale-95'
+            href='/'
           >
             Connect a wallet
           </a>
-          <button className="btn btn-primary text-white text-base font-semibold normal-case rounded-[20px] hover:scale-95 duration-300 h-[60px] px-[30px]">
-            <Image src={UserIcon} alt="usericon" width={20} height={20} />
+          <button className='btn btn-primary h-[60px] rounded-[20px] px-[30px] text-base font-semibold normal-case text-white duration-300 hover:scale-95'>
+            <Image src={UserIcon} alt='usericon' width={20} height={20} />
             Sign Up
           </button>
         </div>
         <Image
-          className="xl:hidden"
+          className='xl:hidden'
           src={burger}
           width={24}
           height={24}
-          alt="burger menu"
+          alt='burger menu'
         />
       </nav>
     </header>
