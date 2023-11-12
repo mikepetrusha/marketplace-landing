@@ -3,10 +3,11 @@ import UserIcon from '../../../public/nav/User.svg';
 import Storefront from '../../../public/nav/Storefront.svg';
 import MarketLogo from '../../../public/nav/NFT Marketplace.svg';
 import burger from '../../../public/nav/burger.svg';
+import { Button } from './ui/Button';
 
 export const Header = () => {
   return (
-    <header className='w-full bg-transparent px-[50px] py-[15px] xl:py-5'>
+    <header className='w-full bg-transparent px-[30px] py-[15px] md:px-[50px] xl:py-5'>
       <nav className='flex justify-between'>
         <div className='flex items-center gap-3'>
           <Image
@@ -39,10 +40,10 @@ export const Header = () => {
           >
             Connect a wallet
           </a>
-          <button className='btn btn-primary h-[60px] rounded-[20px] px-[30px] text-base font-semibold normal-case text-white duration-300 hover:scale-95'>
-            <Image src={UserIcon} alt='usericon' width={20} height={20} />
+
+          <Button variant='primary' icon={UserIcon}>
             Sign Up
-          </button>
+          </Button>
         </div>
         <Image
           className='xl:hidden'
